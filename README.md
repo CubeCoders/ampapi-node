@@ -4,6 +4,12 @@ This API allows you to communicate with AMP installations from within Node.js.
 
 Documentation for available API calls can be found by appending /API to the URL of any existing AMP installation.
 
+# Installation
+
+```bash
+npm install "@cubecoders/ampapi"
+```
+
 # Example
 
 ```node
