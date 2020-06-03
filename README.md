@@ -19,7 +19,7 @@ async function start(){
     var API = new ampapi.AMPAPI("http://localhost:8080/");
     try
     {
-		//Perform first-stage API initialization.
+        //Perform first-stage API initialization.
         var APIInitOK = await API.initAsync();
         if (!APIInitOK) {
             console.log("API Init failed");
@@ -31,17 +31,17 @@ async function start(){
         if (loginResult.success)
         {
             console.log("Login successful");
-			API.sessionId = loginResult.sessionID;
+            API.sessionId = loginResult.sessionID;
 			
-			//Perform second-stage API initialization, we only get the full API data once we're logged in.
-			APIInitOK = await API.initAsync();
+            //Perform second-stage API initialization, we only get the full API data once we're logged in.
+            APIInitOK = await API.initAsync();
 			
-			if (!APIInitOK) {
-				console.log("API Stage 2 Init failed");
-				return;
-			}
+            if (!APIInitOK) {
+                console.log("API Stage 2 Init failed");
+                return;
+            }
 			
-			//API call parameters are simply in the same order as shown in the documentation.
+            //API call parameters are simply in the same order as shown in the documentation.
             await API.Core.SendConsoleMessageAsync("say Hello Everyone, this message was sent from the Node API!");
             var currentStatus = await API.Core.GetStatusAsync();
             console.log(`Current CPU usage is: ${currentStatus.CPUUsagePercent}%`);
