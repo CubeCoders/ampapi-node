@@ -1,0 +1,28 @@
+{
+  "name": "ampapi",
+  "version": "1.0.0",
+  "description": "API Library for CubeCoders AMP",
+  "main": "ampapi.js",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CubeCoders/ampapi-node.git"
+  },
+  "keywords": [
+    "AMP",
+    "CubeCoders",
+    "API"
+  ],
+  "author": "CubeCoders Limited",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CubeCoders/ampapi-node/issues"
+  },
+  "homepage": "https://github.com/CubeCoders/ampapi-node#readme"
+}
