@@ -44,7 +44,7 @@ async function start(){
             //API call parameters are simply in the same order as shown in the documentation.
             await API.Core.SendConsoleMessageAsync("say Hello Everyone, this message was sent from the Node API!");
             var currentStatus = await API.Core.GetStatusAsync();
-            console.log(`Current CPU usage is: ${currentStatus.CPUUsagePercent}%`);
+            console.log(`Current CPU usage is: ${currentStatus.Metrics["CPU Usage"].Percent}%`);
         }
         else
         {
